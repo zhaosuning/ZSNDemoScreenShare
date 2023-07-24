@@ -1,0 +1,706 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		844349152A17C43800A25FA2 /* ZSNMultiChannelScreenShareVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 844349142A17C43800A25FA2 /* ZSNMultiChannelScreenShareVC.m */; };
+		84B0C77F2A14DA5800956B7D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B0C77E2A14DA5800956B7D /* AppDelegate.m */; };
+		84B0C7882A14DA5800956B7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84B0C7862A14DA5800956B7D /* Main.storyboard */; };
+		84B0C78A2A14DA5A00956B7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84B0C7892A14DA5A00956B7D /* Assets.xcassets */; };
+		84B0C78D2A14DA5A00956B7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84B0C78B2A14DA5A00956B7D /* LaunchScreen.storyboard */; };
+		84B0C7902A14DA5A00956B7D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B0C78F2A14DA5A00956B7D /* main.m */; };
+		84B0C7992A150D7200956B7D /* ZSNLibsTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B0C7982A150D7200956B7D /* ZSNLibsTestViewController.m */; };
+		84B0C7ED2A150E1200956B7D /* ZSNFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B0C7EC2A150E1200956B7D /* ZSNFirstViewController.m */; };
+		84B0C7F02A150E6F00956B7D /* ZSNScreenShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B0C7EF2A150E6F00956B7D /* ZSNScreenShareViewController.m */; };
+		84E2E10B2A17BFC500C53ED4 /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E2E10A2A17BFC500C53ED4 /* ReplayKit.framework */; };
+		84E2E10F2A17BFC500C53ED4 /* SampleHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E2E10E2A17BFC500C53ED4 /* SampleHandler.m */; };
+		84E2E1132A17BFC500C53ED4 /* ZSNScreenShareExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 84E2E1082A17BFC500C53ED4 /* ZSNScreenShareExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		84E2E1402A17C01700C53ED4 /* AgoraAiEchoCancellationExtension.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E2E11D2A17C01100C53ED4 /* AgoraAiEchoCancellationExtension.xcframework */; };
+		84E2E1412A17C01700C53ED4 /* AgoraAiEchoCancellationExtension.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84E2E11D2A17C01100C53ED4 /* AgoraAiEchoCancellationExtension.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84E2E1422A17C01900C53ED4 /* AgoraAiNoiseSuppressionExtension.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E2E1242A17C01100C53ED4 /* AgoraAiNoiseSuppressionExtension.xcframework */; };
+		84E2E1432A17C01900C53ED4 /* AgoraAiNoiseSuppressionExtension.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84E2E1242A17C01100C53ED4 /* AgoraAiNoiseSuppressionExtension.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84E2E1442A17C01A00C53ED4 /* AgoraAudioBeautyExtension.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E2E11B2A17C01100C53ED4 /* AgoraAudioBeautyExtension.xcframework */; };
+		84E2E1452A17C01A00C53ED4 /* AgoraAudioBeautyExtension.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84E2E11B2A17C01100C53ED4 /* AgoraAudioBeautyExtension.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84E2E1462A17C01C00C53ED4 /* AgoraClearVisionExtension.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E2E1182A17C01100C53ED4 /* AgoraClearVisionExtension.xcframework */; };
+		84E2E1472A17C01C00C53ED4 /* AgoraClearVisionExtension.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84E2E1182A17C01100C53ED4 /* AgoraClearVisionExtension.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84E2E1482A17C01D00C53ED4 /* AgoraContentInspectExtension.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E2E1212A17C01100C53ED4 /* AgoraContentInspectExtension.xcframework */; };
+		84E2E1492A17C01D00C53ED4 /* AgoraContentInspectExtension.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84E2E1212A17C01100C53ED4 /* AgoraContentInspectExtension.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84E2E14A2A17C02100C53ED4 /* AgoraDav1d.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E2E1202A17C01100C53ED4 /* AgoraDav1d.xcframework */; };
+		84E2E14B2A17C02100C53ED4 /* AgoraDav1d.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84E2E1202A17C01100C53ED4 /* AgoraDav1d.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84E2E14C2A17C02300C53ED4 /* AgoraDrmLoaderExtension.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E2E1232A17C01100C53ED4 /* AgoraDrmLoaderExtension.xcframework */; };
+		84E2E14D2A17C02300C53ED4 /* AgoraDrmLoaderExtension.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84E2E1232A17C01100C53ED4 /* AgoraDrmLoaderExtension.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84E2E14E2A17C02500C53ED4 /* AgoraFaceDetectionExtension.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E2E1252A17C01100C53ED4 /* AgoraFaceDetectionExtension.xcframework */; };
+		84E2E14F2A17C02500C53ED4 /* AgoraFaceDetectionExtension.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84E2E1252A17C01100C53ED4 /* AgoraFaceDetectionExtension.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84E2E1502A17C02600C53ED4 /* Agorafdkaac.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E2E12A2A17C01200C53ED4 /* Agorafdkaac.xcframework */; };
+		84E2E1512A17C02700C53ED4 /* Agorafdkaac.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84E2E12A2A17C01200C53ED4 /* Agorafdkaac.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84E2E1522A17C02A00C53ED4 /* Agoraffmpeg.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E2E1272A17C01100C53ED4 /* Agoraffmpeg.xcframework */; };
+		84E2E1532A17C02A00C53ED4 /* Agoraffmpeg.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84E2E1272A17C01100C53ED4 /* Agoraffmpeg.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84E2E1542A17C02C00C53ED4 /* AgoraReplayKitExtension.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E2E1292A17C01200C53ED4 /* AgoraReplayKitExtension.xcframework */; };
+		84E2E1552A17C02C00C53ED4 /* AgoraReplayKitExtension.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84E2E1292A17C01200C53ED4 /* AgoraReplayKitExtension.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84E2E1562A17C02E00C53ED4 /* AgoraRtcKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E2E11C2A17C01100C53ED4 /* AgoraRtcKit.xcframework */; };
+		84E2E1572A17C02E00C53ED4 /* AgoraRtcKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84E2E11C2A17C01100C53ED4 /* AgoraRtcKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84E2E1582A17C03000C53ED4 /* AgoraSoundTouch.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E2E11E2A17C01100C53ED4 /* AgoraSoundTouch.xcframework */; };
+		84E2E1592A17C03000C53ED4 /* AgoraSoundTouch.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84E2E11E2A17C01100C53ED4 /* AgoraSoundTouch.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84E2E15A2A17C03200C53ED4 /* AgoraSpatialAudioExtension.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E2E11F2A17C01100C53ED4 /* AgoraSpatialAudioExtension.xcframework */; };
+		84E2E15B2A17C03200C53ED4 /* AgoraSpatialAudioExtension.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84E2E11F2A17C01100C53ED4 /* AgoraSpatialAudioExtension.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84E2E15C2A17C03400C53ED4 /* AgoraVideoDecoderExtension.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E2E1262A17C01100C53ED4 /* AgoraVideoDecoderExtension.xcframework */; };
+		84E2E15D2A17C03400C53ED4 /* AgoraVideoDecoderExtension.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84E2E1262A17C01100C53ED4 /* AgoraVideoDecoderExtension.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84E2E15E2A17C03700C53ED4 /* AgoraVideoEncoderExtension.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E2E1222A17C01100C53ED4 /* AgoraVideoEncoderExtension.xcframework */; };
+		84E2E15F2A17C03800C53ED4 /* AgoraVideoEncoderExtension.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84E2E1222A17C01100C53ED4 /* AgoraVideoEncoderExtension.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84E2E1602A17C03D00C53ED4 /* AgoraVideoQualityAnalyzerExtension.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E2E1192A17C01100C53ED4 /* AgoraVideoQualityAnalyzerExtension.xcframework */; };
+		84E2E1612A17C03D00C53ED4 /* AgoraVideoQualityAnalyzerExtension.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84E2E1192A17C01100C53ED4 /* AgoraVideoQualityAnalyzerExtension.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84E2E1622A17C03F00C53ED4 /* AgoraVideoSegmentationExtension.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E2E1282A17C01100C53ED4 /* AgoraVideoSegmentationExtension.xcframework */; };
+		84E2E1632A17C03F00C53ED4 /* AgoraVideoSegmentationExtension.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84E2E1282A17C01100C53ED4 /* AgoraVideoSegmentationExtension.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84E2E1642A17C04100C53ED4 /* video_dec.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E2E12B2A17C01200C53ED4 /* video_dec.xcframework */; };
+		84E2E1652A17C04200C53ED4 /* video_dec.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84E2E12B2A17C01200C53ED4 /* video_dec.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84E2E1662A17C04600C53ED4 /* video_enc.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E2E11A2A17C01100C53ED4 /* video_enc.xcframework */; };
+		84E2E1672A17C04600C53ED4 /* video_enc.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84E2E11A2A17C01100C53ED4 /* video_enc.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84E2E1682A17C09200C53ED4 /* AgoraReplayKitExtension.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E2E1292A17C01200C53ED4 /* AgoraReplayKitExtension.xcframework */; };
+		84E2E1692A17C09200C53ED4 /* AgoraReplayKitExtension.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84E2E1292A17C01200C53ED4 /* AgoraReplayKitExtension.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		84E2E1112A17BFC500C53ED4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84B0C7722A14DA5800956B7D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84E2E1072A17BFC500C53ED4;
+			remoteInfo = ZSNScreenShareExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		84B0C7C42A150DB400956B7D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				84E2E1552A17C02C00C53ED4 /* AgoraReplayKitExtension.xcframework in Embed Frameworks */,
+				84E2E1452A17C01A00C53ED4 /* AgoraAudioBeautyExtension.xcframework in Embed Frameworks */,
+				84E2E15D2A17C03400C53ED4 /* AgoraVideoDecoderExtension.xcframework in Embed Frameworks */,
+				84E2E14D2A17C02300C53ED4 /* AgoraDrmLoaderExtension.xcframework in Embed Frameworks */,
+				84E2E14B2A17C02100C53ED4 /* AgoraDav1d.xcframework in Embed Frameworks */,
+				84E2E14F2A17C02500C53ED4 /* AgoraFaceDetectionExtension.xcframework in Embed Frameworks */,
+				84E2E1572A17C02E00C53ED4 /* AgoraRtcKit.xcframework in Embed Frameworks */,
+				84E2E1512A17C02700C53ED4 /* Agorafdkaac.xcframework in Embed Frameworks */,
+				84E2E1672A17C04600C53ED4 /* video_enc.xcframework in Embed Frameworks */,
+				84E2E1592A17C03000C53ED4 /* AgoraSoundTouch.xcframework in Embed Frameworks */,
+				84E2E1412A17C01700C53ED4 /* AgoraAiEchoCancellationExtension.xcframework in Embed Frameworks */,
+				84E2E1632A17C03F00C53ED4 /* AgoraVideoSegmentationExtension.xcframework in Embed Frameworks */,
+				84E2E1652A17C04200C53ED4 /* video_dec.xcframework in Embed Frameworks */,
+				84E2E1472A17C01C00C53ED4 /* AgoraClearVisionExtension.xcframework in Embed Frameworks */,
+				84E2E1612A17C03D00C53ED4 /* AgoraVideoQualityAnalyzerExtension.xcframework in Embed Frameworks */,
+				84E2E15F2A17C03800C53ED4 /* AgoraVideoEncoderExtension.xcframework in Embed Frameworks */,
+				84E2E15B2A17C03200C53ED4 /* AgoraSpatialAudioExtension.xcframework in Embed Frameworks */,
+				84E2E1492A17C01D00C53ED4 /* AgoraContentInspectExtension.xcframework in Embed Frameworks */,
+				84E2E1432A17C01900C53ED4 /* AgoraAiNoiseSuppressionExtension.xcframework in Embed Frameworks */,
+				84E2E1532A17C02A00C53ED4 /* Agoraffmpeg.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84E2E1142A17BFC500C53ED4 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				84E2E1132A17BFC500C53ED4 /* ZSNScreenShareExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84E2E16A2A17C09200C53ED4 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				84E2E1692A17C09200C53ED4 /* AgoraReplayKitExtension.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		844349132A17C43800A25FA2 /* ZSNMultiChannelScreenShareVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZSNMultiChannelScreenShareVC.h; sourceTree = "<group>"; };
+		844349142A17C43800A25FA2 /* ZSNMultiChannelScreenShareVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZSNMultiChannelScreenShareVC.m; sourceTree = "<group>"; };
+		84B0C77A2A14DA5800956B7D /* ZSNDemoScreenShare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZSNDemoScreenShare.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84B0C77D2A14DA5800956B7D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		84B0C77E2A14DA5800956B7D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		84B0C7872A14DA5800956B7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		84B0C7892A14DA5A00956B7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84B0C78C2A14DA5A00956B7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		84B0C78E2A14DA5A00956B7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84B0C78F2A14DA5A00956B7D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		84B0C7972A150D7200956B7D /* ZSNLibsTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZSNLibsTestViewController.h; sourceTree = "<group>"; };
+		84B0C7982A150D7200956B7D /* ZSNLibsTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZSNLibsTestViewController.m; sourceTree = "<group>"; };
+		84B0C7EB2A150E1200956B7D /* ZSNFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZSNFirstViewController.h; sourceTree = "<group>"; };
+		84B0C7EC2A150E1200956B7D /* ZSNFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZSNFirstViewController.m; sourceTree = "<group>"; };
+		84B0C7EE2A150E6F00956B7D /* ZSNScreenShareViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZSNScreenShareViewController.h; sourceTree = "<group>"; };
+		84B0C7EF2A150E6F00956B7D /* ZSNScreenShareViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZSNScreenShareViewController.m; sourceTree = "<group>"; };
+		84B0C7F12A1510B200956B7D /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		84E2E1082A17BFC500C53ED4 /* ZSNScreenShareExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ZSNScreenShareExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		84E2E10A2A17BFC500C53ED4 /* ReplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReplayKit.framework; path = System/Library/Frameworks/ReplayKit.framework; sourceTree = SDKROOT; };
+		84E2E10D2A17BFC500C53ED4 /* SampleHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SampleHandler.h; sourceTree = "<group>"; };
+		84E2E10E2A17BFC500C53ED4 /* SampleHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SampleHandler.m; sourceTree = "<group>"; };
+		84E2E1102A17BFC500C53ED4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84E2E1182A17C01100C53ED4 /* AgoraClearVisionExtension.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = AgoraClearVisionExtension.xcframework; path = "../../../../.Trash/ZSNDemoScreenShare 22-29-10-355/ZSNDemoScreenShare/ZSNLibs/AgoraClearVisionExtension.xcframework"; sourceTree = "<group>"; };
+		84E2E1192A17C01100C53ED4 /* AgoraVideoQualityAnalyzerExtension.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = AgoraVideoQualityAnalyzerExtension.xcframework; path = "../../../../.Trash/ZSNDemoScreenShare 22-29-10-355/ZSNDemoScreenShare/ZSNLibs/AgoraVideoQualityAnalyzerExtension.xcframework"; sourceTree = "<group>"; };
+		84E2E11A2A17C01100C53ED4 /* video_enc.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = video_enc.xcframework; path = "../../../../.Trash/ZSNDemoScreenShare 22-29-10-355/ZSNDemoScreenShare/ZSNLibs/video_enc.xcframework"; sourceTree = "<group>"; };
+		84E2E11B2A17C01100C53ED4 /* AgoraAudioBeautyExtension.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = AgoraAudioBeautyExtension.xcframework; path = "../../../../.Trash/ZSNDemoScreenShare 22-29-10-355/ZSNDemoScreenShare/ZSNLibs/AgoraAudioBeautyExtension.xcframework"; sourceTree = "<group>"; };
+		84E2E11C2A17C01100C53ED4 /* AgoraRtcKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = AgoraRtcKit.xcframework; path = "../../../../.Trash/ZSNDemoScreenShare 22-29-10-355/ZSNDemoScreenShare/ZSNLibs/AgoraRtcKit.xcframework"; sourceTree = "<group>"; };
+		84E2E11D2A17C01100C53ED4 /* AgoraAiEchoCancellationExtension.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = AgoraAiEchoCancellationExtension.xcframework; path = "../../../../.Trash/ZSNDemoScreenShare 22-29-10-355/ZSNDemoScreenShare/ZSNLibs/AgoraAiEchoCancellationExtension.xcframework"; sourceTree = "<group>"; };
+		84E2E11E2A17C01100C53ED4 /* AgoraSoundTouch.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = AgoraSoundTouch.xcframework; path = "../../../../.Trash/ZSNDemoScreenShare 22-29-10-355/ZSNDemoScreenShare/ZSNLibs/AgoraSoundTouch.xcframework"; sourceTree = "<group>"; };
+		84E2E11F2A17C01100C53ED4 /* AgoraSpatialAudioExtension.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = AgoraSpatialAudioExtension.xcframework; path = "../../../../.Trash/ZSNDemoScreenShare 22-29-10-355/ZSNDemoScreenShare/ZSNLibs/AgoraSpatialAudioExtension.xcframework"; sourceTree = "<group>"; };
+		84E2E1202A17C01100C53ED4 /* AgoraDav1d.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = AgoraDav1d.xcframework; path = "../../../../.Trash/ZSNDemoScreenShare 22-29-10-355/ZSNDemoScreenShare/ZSNLibs/AgoraDav1d.xcframework"; sourceTree = "<group>"; };
+		84E2E1212A17C01100C53ED4 /* AgoraContentInspectExtension.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = AgoraContentInspectExtension.xcframework; path = "../../../../.Trash/ZSNDemoScreenShare 22-29-10-355/ZSNDemoScreenShare/ZSNLibs/AgoraContentInspectExtension.xcframework"; sourceTree = "<group>"; };
+		84E2E1222A17C01100C53ED4 /* AgoraVideoEncoderExtension.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = AgoraVideoEncoderExtension.xcframework; path = "../../../../.Trash/ZSNDemoScreenShare 22-29-10-355/ZSNDemoScreenShare/ZSNLibs/AgoraVideoEncoderExtension.xcframework"; sourceTree = "<group>"; };
+		84E2E1232A17C01100C53ED4 /* AgoraDrmLoaderExtension.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = AgoraDrmLoaderExtension.xcframework; path = "../../../../.Trash/ZSNDemoScreenShare 22-29-10-355/ZSNDemoScreenShare/ZSNLibs/AgoraDrmLoaderExtension.xcframework"; sourceTree = "<group>"; };
+		84E2E1242A17C01100C53ED4 /* AgoraAiNoiseSuppressionExtension.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = AgoraAiNoiseSuppressionExtension.xcframework; path = "../../../../.Trash/ZSNDemoScreenShare 22-29-10-355/ZSNDemoScreenShare/ZSNLibs/AgoraAiNoiseSuppressionExtension.xcframework"; sourceTree = "<group>"; };
+		84E2E1252A17C01100C53ED4 /* AgoraFaceDetectionExtension.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = AgoraFaceDetectionExtension.xcframework; path = "../../../../.Trash/ZSNDemoScreenShare 22-29-10-355/ZSNDemoScreenShare/ZSNLibs/AgoraFaceDetectionExtension.xcframework"; sourceTree = "<group>"; };
+		84E2E1262A17C01100C53ED4 /* AgoraVideoDecoderExtension.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = AgoraVideoDecoderExtension.xcframework; path = "../../../../.Trash/ZSNDemoScreenShare 22-29-10-355/ZSNDemoScreenShare/ZSNLibs/AgoraVideoDecoderExtension.xcframework"; sourceTree = "<group>"; };
+		84E2E1272A17C01100C53ED4 /* Agoraffmpeg.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Agoraffmpeg.xcframework; path = "../../../../.Trash/ZSNDemoScreenShare 22-29-10-355/ZSNDemoScreenShare/ZSNLibs/Agoraffmpeg.xcframework"; sourceTree = "<group>"; };
+		84E2E1282A17C01100C53ED4 /* AgoraVideoSegmentationExtension.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = AgoraVideoSegmentationExtension.xcframework; path = "../../../../.Trash/ZSNDemoScreenShare 22-29-10-355/ZSNDemoScreenShare/ZSNLibs/AgoraVideoSegmentationExtension.xcframework"; sourceTree = "<group>"; };
+		84E2E1292A17C01200C53ED4 /* AgoraReplayKitExtension.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = AgoraReplayKitExtension.xcframework; path = "../../../../.Trash/ZSNDemoScreenShare 22-29-10-355/ZSNDemoScreenShare/ZSNLibs/AgoraReplayKitExtension.xcframework"; sourceTree = "<group>"; };
+		84E2E12A2A17C01200C53ED4 /* Agorafdkaac.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Agorafdkaac.xcframework; path = "../../../../.Trash/ZSNDemoScreenShare 22-29-10-355/ZSNDemoScreenShare/ZSNLibs/Agorafdkaac.xcframework"; sourceTree = "<group>"; };
+		84E2E12B2A17C01200C53ED4 /* video_dec.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = video_dec.xcframework; path = "../../../../.Trash/ZSNDemoScreenShare 22-29-10-355/ZSNDemoScreenShare/ZSNLibs/video_dec.xcframework"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84B0C7772A14DA5800956B7D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84E2E1542A17C02C00C53ED4 /* AgoraReplayKitExtension.xcframework in Frameworks */,
+				84E2E14C2A17C02300C53ED4 /* AgoraDrmLoaderExtension.xcframework in Frameworks */,
+				84E2E1482A17C01D00C53ED4 /* AgoraContentInspectExtension.xcframework in Frameworks */,
+				84E2E1502A17C02600C53ED4 /* Agorafdkaac.xcframework in Frameworks */,
+				84E2E1462A17C01C00C53ED4 /* AgoraClearVisionExtension.xcframework in Frameworks */,
+				84E2E1582A17C03000C53ED4 /* AgoraSoundTouch.xcframework in Frameworks */,
+				84E2E1642A17C04100C53ED4 /* video_dec.xcframework in Frameworks */,
+				84E2E1402A17C01700C53ED4 /* AgoraAiEchoCancellationExtension.xcframework in Frameworks */,
+				84E2E1662A17C04600C53ED4 /* video_enc.xcframework in Frameworks */,
+				84E2E1522A17C02A00C53ED4 /* Agoraffmpeg.xcframework in Frameworks */,
+				84E2E1422A17C01900C53ED4 /* AgoraAiNoiseSuppressionExtension.xcframework in Frameworks */,
+				84E2E15A2A17C03200C53ED4 /* AgoraSpatialAudioExtension.xcframework in Frameworks */,
+				84E2E1442A17C01A00C53ED4 /* AgoraAudioBeautyExtension.xcframework in Frameworks */,
+				84E2E15E2A17C03700C53ED4 /* AgoraVideoEncoderExtension.xcframework in Frameworks */,
+				84E2E1622A17C03F00C53ED4 /* AgoraVideoSegmentationExtension.xcframework in Frameworks */,
+				84E2E1562A17C02E00C53ED4 /* AgoraRtcKit.xcframework in Frameworks */,
+				84E2E15C2A17C03400C53ED4 /* AgoraVideoDecoderExtension.xcframework in Frameworks */,
+				84E2E14A2A17C02100C53ED4 /* AgoraDav1d.xcframework in Frameworks */,
+				84E2E1602A17C03D00C53ED4 /* AgoraVideoQualityAnalyzerExtension.xcframework in Frameworks */,
+				84E2E14E2A17C02500C53ED4 /* AgoraFaceDetectionExtension.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84E2E1052A17BFC500C53ED4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84E2E1682A17C09200C53ED4 /* AgoraReplayKitExtension.xcframework in Frameworks */,
+				84E2E10B2A17BFC500C53ED4 /* ReplayKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		84B0C7712A14DA5800956B7D = {
+			isa = PBXGroup;
+			children = (
+				84B0C77C2A14DA5800956B7D /* ZSNDemoScreenShare */,
+				84E2E10C2A17BFC500C53ED4 /* ZSNScreenShareExtension */,
+				84E2E1092A17BFC500C53ED4 /* Frameworks */,
+				84B0C77B2A14DA5800956B7D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		84B0C77B2A14DA5800956B7D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84B0C77A2A14DA5800956B7D /* ZSNDemoScreenShare.app */,
+				84E2E1082A17BFC500C53ED4 /* ZSNScreenShareExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84B0C77C2A14DA5800956B7D /* ZSNDemoScreenShare */ = {
+			isa = PBXGroup;
+			children = (
+				84B0C7962A150D0300956B7D /* ZSNLibs */,
+				84B0C77D2A14DA5800956B7D /* AppDelegate.h */,
+				84B0C77E2A14DA5800956B7D /* AppDelegate.m */,
+				84B0C7862A14DA5800956B7D /* Main.storyboard */,
+				84B0C7892A14DA5A00956B7D /* Assets.xcassets */,
+				84B0C78B2A14DA5A00956B7D /* LaunchScreen.storyboard */,
+				84B0C78E2A14DA5A00956B7D /* Info.plist */,
+				84B0C78F2A14DA5A00956B7D /* main.m */,
+				84B0C7EB2A150E1200956B7D /* ZSNFirstViewController.h */,
+				84B0C7EC2A150E1200956B7D /* ZSNFirstViewController.m */,
+				84B0C7EE2A150E6F00956B7D /* ZSNScreenShareViewController.h */,
+				84B0C7EF2A150E6F00956B7D /* ZSNScreenShareViewController.m */,
+				84B0C7F12A1510B200956B7D /* PrefixHeader.pch */,
+				844349132A17C43800A25FA2 /* ZSNMultiChannelScreenShareVC.h */,
+				844349142A17C43800A25FA2 /* ZSNMultiChannelScreenShareVC.m */,
+			);
+			path = ZSNDemoScreenShare;
+			sourceTree = "<group>";
+		};
+		84B0C7962A150D0300956B7D /* ZSNLibs */ = {
+			isa = PBXGroup;
+			children = (
+				84E2E11D2A17C01100C53ED4 /* AgoraAiEchoCancellationExtension.xcframework */,
+				84E2E1242A17C01100C53ED4 /* AgoraAiNoiseSuppressionExtension.xcframework */,
+				84E2E11B2A17C01100C53ED4 /* AgoraAudioBeautyExtension.xcframework */,
+				84E2E1182A17C01100C53ED4 /* AgoraClearVisionExtension.xcframework */,
+				84E2E1212A17C01100C53ED4 /* AgoraContentInspectExtension.xcframework */,
+				84E2E1202A17C01100C53ED4 /* AgoraDav1d.xcframework */,
+				84E2E1232A17C01100C53ED4 /* AgoraDrmLoaderExtension.xcframework */,
+				84E2E1252A17C01100C53ED4 /* AgoraFaceDetectionExtension.xcframework */,
+				84E2E12A2A17C01200C53ED4 /* Agorafdkaac.xcframework */,
+				84E2E1272A17C01100C53ED4 /* Agoraffmpeg.xcframework */,
+				84E2E1292A17C01200C53ED4 /* AgoraReplayKitExtension.xcframework */,
+				84E2E11C2A17C01100C53ED4 /* AgoraRtcKit.xcframework */,
+				84E2E11E2A17C01100C53ED4 /* AgoraSoundTouch.xcframework */,
+				84E2E11F2A17C01100C53ED4 /* AgoraSpatialAudioExtension.xcframework */,
+				84E2E1262A17C01100C53ED4 /* AgoraVideoDecoderExtension.xcframework */,
+				84E2E1222A17C01100C53ED4 /* AgoraVideoEncoderExtension.xcframework */,
+				84E2E1192A17C01100C53ED4 /* AgoraVideoQualityAnalyzerExtension.xcframework */,
+				84E2E1282A17C01100C53ED4 /* AgoraVideoSegmentationExtension.xcframework */,
+				84E2E12B2A17C01200C53ED4 /* video_dec.xcframework */,
+				84E2E11A2A17C01100C53ED4 /* video_enc.xcframework */,
+				84B0C7972A150D7200956B7D /* ZSNLibsTestViewController.h */,
+				84B0C7982A150D7200956B7D /* ZSNLibsTestViewController.m */,
+			);
+			path = ZSNLibs;
+			sourceTree = "<group>";
+		};
+		84E2E1092A17BFC500C53ED4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84E2E10A2A17BFC500C53ED4 /* ReplayKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		84E2E10C2A17BFC500C53ED4 /* ZSNScreenShareExtension */ = {
+			isa = PBXGroup;
+			children = (
+				84E2E10D2A17BFC500C53ED4 /* SampleHandler.h */,
+				84E2E10E2A17BFC500C53ED4 /* SampleHandler.m */,
+				84E2E1102A17BFC500C53ED4 /* Info.plist */,
+			);
+			path = ZSNScreenShareExtension;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84B0C7792A14DA5800956B7D /* ZSNDemoScreenShare */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84B0C7932A14DA5A00956B7D /* Build configuration list for PBXNativeTarget "ZSNDemoScreenShare" */;
+			buildPhases = (
+				84B0C7762A14DA5800956B7D /* Sources */,
+				84B0C7772A14DA5800956B7D /* Frameworks */,
+				84B0C7782A14DA5800956B7D /* Resources */,
+				84B0C7C42A150DB400956B7D /* Embed Frameworks */,
+				84E2E1142A17BFC500C53ED4 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84E2E1122A17BFC500C53ED4 /* PBXTargetDependency */,
+			);
+			name = ZSNDemoScreenShare;
+			productName = ZSNDemoScreenShare;
+			productReference = 84B0C77A2A14DA5800956B7D /* ZSNDemoScreenShare.app */;
+			productType = "com.apple.product-type.application";
+		};
+		84E2E1072A17BFC500C53ED4 /* ZSNScreenShareExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84E2E1172A17BFC500C53ED4 /* Build configuration list for PBXNativeTarget "ZSNScreenShareExtension" */;
+			buildPhases = (
+				84E2E1042A17BFC500C53ED4 /* Sources */,
+				84E2E1052A17BFC500C53ED4 /* Frameworks */,
+				84E2E1062A17BFC500C53ED4 /* Resources */,
+				84E2E16A2A17C09200C53ED4 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZSNScreenShareExtension;
+			productName = ZSNScreenShareExtension;
+			productReference = 84E2E1082A17BFC500C53ED4 /* ZSNScreenShareExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84B0C7722A14DA5800956B7D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					84B0C7792A14DA5800956B7D = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					84E2E1072A17BFC500C53ED4 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = 84B0C7752A14DA5800956B7D /* Build configuration list for PBXProject "ZSNDemoScreenShare" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84B0C7712A14DA5800956B7D;
+			productRefGroup = 84B0C77B2A14DA5800956B7D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84B0C7792A14DA5800956B7D /* ZSNDemoScreenShare */,
+				84E2E1072A17BFC500C53ED4 /* ZSNScreenShareExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84B0C7782A14DA5800956B7D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84B0C78D2A14DA5A00956B7D /* LaunchScreen.storyboard in Resources */,
+				84B0C78A2A14DA5A00956B7D /* Assets.xcassets in Resources */,
+				84B0C7882A14DA5800956B7D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84E2E1062A17BFC500C53ED4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84B0C7762A14DA5800956B7D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84B0C77F2A14DA5800956B7D /* AppDelegate.m in Sources */,
+				84B0C7ED2A150E1200956B7D /* ZSNFirstViewController.m in Sources */,
+				844349152A17C43800A25FA2 /* ZSNMultiChannelScreenShareVC.m in Sources */,
+				84B0C7992A150D7200956B7D /* ZSNLibsTestViewController.m in Sources */,
+				84B0C7902A14DA5A00956B7D /* main.m in Sources */,
+				84B0C7F02A150E6F00956B7D /* ZSNScreenShareViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84E2E1042A17BFC500C53ED4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84E2E10F2A17BFC500C53ED4 /* SampleHandler.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		84E2E1122A17BFC500C53ED4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84E2E1072A17BFC500C53ED4 /* ZSNScreenShareExtension */;
+			targetProxy = 84E2E1112A17BFC500C53ED4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		84B0C7862A14DA5800956B7D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84B0C7872A14DA5800956B7D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		84B0C78B2A14DA5A00956B7D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84B0C78C2A14DA5A00956B7D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84B0C7912A14DA5A00956B7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ZSNDemoScreenShare/PrefixHeader.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		84B0C7922A14DA5A00956B7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ZSNDemoScreenShare/PrefixHeader.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84B0C7942A14DA5A00956B7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GWK6W4WC7K;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ZSNDemoScreenShare/PrefixHeader.pch";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ZSNDemoScreenShare/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.lianxi.ZSNDemoScreenShare;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		84B0C7952A14DA5A00956B7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GWK6W4WC7K;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ZSNDemoScreenShare/PrefixHeader.pch";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ZSNDemoScreenShare/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.lianxi.ZSNDemoScreenShare;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		84E2E1152A17BFC500C53ED4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GWK6W4WC7K;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ZSNScreenShareExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ZSNScreenShareExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.lianxi.ZSNDemoScreenShare.ZSNScreenShareExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		84E2E1162A17BFC500C53ED4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GWK6W4WC7K;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ZSNScreenShareExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ZSNScreenShareExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.lianxi.ZSNDemoScreenShare.ZSNScreenShareExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84B0C7752A14DA5800956B7D /* Build configuration list for PBXProject "ZSNDemoScreenShare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84B0C7912A14DA5A00956B7D /* Debug */,
+				84B0C7922A14DA5A00956B7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84B0C7932A14DA5A00956B7D /* Build configuration list for PBXNativeTarget "ZSNDemoScreenShare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84B0C7942A14DA5A00956B7D /* Debug */,
+				84B0C7952A14DA5A00956B7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84E2E1172A17BFC500C53ED4 /* Build configuration list for PBXNativeTarget "ZSNScreenShareExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84E2E1152A17BFC500C53ED4 /* Debug */,
+				84E2E1162A17BFC500C53ED4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84B0C7722A14DA5800956B7D /* Project object */;
+}
